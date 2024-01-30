@@ -21,7 +21,12 @@ async function startProgram() {
 	await roll (90, 50, 2.3)
 	await delay (1)
 	await Sound.Animal.play(true)
+	await Sound.Animal.play(true)
 //Checkpoint 3: Red
-	await roll (180, 50, 2)
-	
+	await roll (180, 50, 1)
+	await delay (1)
+	await roll (210, 80, 1)
+	await delay (1)
+	setMainLed({ r: 255, g: 0, b: 0 });
+
 }
